@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.grocery.sainikgrocerydelivery.ui.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_urc"
+        android:name="com.grocery.sainikgrocerydelivery.ui.fragment.URClistFragment"
+        android:label="URC List"
+        tools:layout="@layout/fragment_u_r_clist" />
+
+
+    <fragment
+        android:id="@+id/nav_orderdetails"
+        android:name="com.grocery.sainikgrocerydelivery.ui.fragment.OrderdetailsFragment"
+        android:label="Order Details"
+        tools:layout="@layout/fragment_orderdetails" />
+
+
+    <fragment
+        android:id="@+id/nav_deliverydetails"
+        android:name="com.grocery.sainikgrocerydelivery.ui.fragment.DeliveryDetailsFragment"
+        android:label="Delivery Details"
+        tools:layout="@layout/fragment_delivery_details" />
+
+    <fragment
+        android:id="@+id/nav_returnorder"
+        android:name="com.grocery.sainikgrocerydelivery.ui.fragment.ReturnOrderFragment"
+        android:label="Return order"
+        tools:layout="@layout/fragment_return_order" />
+
+</navigation>

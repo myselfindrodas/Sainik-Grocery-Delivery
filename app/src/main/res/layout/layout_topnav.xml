@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlLogo"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_75sdp"
+    android:background="@drawable/rounded_bottom_rectengel">
+
+
+    <LinearLayout
+        android:id="@+id/lltopnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#0F385A"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home"
+                android:layout_weight="0.9"
+                app:tint="#EC6822"/>
+
+
+            <TextView
+                android:id="@+id/tvUrcaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="URC Baranagar, West Bengal"
+                android:layout_weight="0.1"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@android:color/white"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/ivCart"
+                android:visibility="gone"
+                android:src="@drawable/ic_cart" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/ivNotification"
+                android:layout_weight="1"
+                android:src="@drawable/ic_notifications" />
+
+            <ImageView
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_gravity="center"
+                android:id="@+id/btnLogout"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                app:tint="@color/white"
+                android:src="@drawable/ic_poweroff" />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

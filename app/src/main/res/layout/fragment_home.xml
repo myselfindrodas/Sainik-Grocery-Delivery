@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <include
+        android:id="@+id/topnav"
+        layout="@layout/layout_topnav" />
+
+    <ImageView
+        android:id="@+id/ivscooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_scooter"/>
+
+    <TextView
+        android:id="@+id/tvtagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Your got a new consignment"
+        android:layout_below="@+id/ivscooter"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_16sdp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProcceed"
+        android:layout_below="@+id/tvtagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_65sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_65sdp"
+        android:background="@drawable/rounded_orange_bg_btn"
+        android:fontFamily="@font/poppins_regular"
+        android:text="PICK YOUR CONSIGNMENT"
+        android:textColor="@color/white"/>
+
+
+
+</RelativeLayout>
+</layout>

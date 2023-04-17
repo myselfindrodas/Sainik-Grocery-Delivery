@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/btnDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/grey_border_rounded"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvOrderid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Order ID : #GHDw27821"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_12ssp" />
+
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_7sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_location"
+                    android:text="19 S Canyon Road, Havensville,ks, 66432 United States"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_9ssp" />
+
+
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnpicked"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/rectengel3"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Picked"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@color/white"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnpending"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/rectengel3"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Pending"
+                android:backgroundTint="@color/red"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@color/white"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btndelivered"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/rectengel3"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Delivered"
+                android:visibility="gone"
+                android:backgroundTint="@color/green"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrowbg"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
